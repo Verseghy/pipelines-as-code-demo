@@ -17,11 +17,11 @@ spec:
         params:
           - name: url
             value: {{ repo_url }}
-      - name: revision
-        value: {{ revision }}
-        workspaces:
-          - name: output
-            workspace: shared-workspace
+          - name: revision
+            value: {{ revision }}
+            workspaces:
+              - name: output
+                workspace: shared-workspace
       - name: build-from-source
         taskRef:
           resolver: cluster
