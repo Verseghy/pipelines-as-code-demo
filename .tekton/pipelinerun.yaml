@@ -4,7 +4,7 @@ kind: PipelineRun
 metadata:
   name: pipelines-as-code-demo
   annotations:
-    pipelinesascode.tekton.dev/task: "[./git-clone.yaml]"
+    pipelinesascode.tekton.dev/task: "[<.tekton/git-clone.yaml>]"
     pipelinesascode.tekton.dev/on-event: "[pull_request, push]"
     pipelinesascode.tekton.dev/on-target-branch: "[master]"
 spec:
