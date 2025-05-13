@@ -22,6 +22,7 @@ spec:
       type: string
   steps:
     - computeResources: {}
+      workingDir: $(workspaces.source.path)
       env:
         - name: PARAM_URL
           value: $(params.url)
