@@ -35,7 +35,6 @@ spec:
         #!/usr/bin/env sh
         set -eu
 
-        dnf install git -y
         CHECKOUT_DIR="${WORKSPACE_OUTPUT_PATH}/"
 
         cleandir() {
